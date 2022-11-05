@@ -33,8 +33,12 @@ std::string utils::randomPass(uint32_t length, std::string addToChar) {
 }
 
 std::string utils::setupPassAlphabet(std::string keyString) {
-    std::string genAlphabet = "abcdefghijklmnopqrstuvwxyz";
-    if (keyString.find("p") != std::string::npos || keyString.find("n") != std::string::npos || keyString.find("y") != std::string::npos || keyString.find("N") != std::string::npos) {
+    std::string genAlphabet = "";
+    if (keyString.find("d") != std::string::npos || keyString.find("p") != std::string::npos || keyString.find("n") != std::string::npos || keyString.find("y") != std::string::npos || keyString.find("N") != std::string::npos) {
+    	if (keyString.find("d") != std::string::npos) {
+            genAlphabet = "abcdefghijklmnopqrstuvwxyz";
+            return genAlphabet;
+        }
         if (keyString.find("N") != std::string::npos) {
             genAlphabet = "1234567890";
             return genAlphabet;
