@@ -6,6 +6,7 @@
 
 int main()
 {
+    srand(time(NULL));
     std::setlocale(LC_ALL, "en_US.UTF-8");
     std::string alphabetz = "";
     int n = 0;
