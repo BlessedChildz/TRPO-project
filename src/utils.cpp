@@ -51,25 +51,3 @@ std::string utils::setupPassAlphabet(std::string keyString) {
         return "1";
     }
 }
-
-/*int utils::testSetupPassAlphabet(std::string keyString, int expected) {
-    int output = 0;
-    std::string outputStr = setupPassAlphabet(keyString);
-    if (outputStr == "abcdefghijklmnopqrstuvwxyz") output = 1;
-    else if (outputStr == "abcdefghijklmnopqrstuvwxyz1234567890") output = 0;
-    else if (outputStr == "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") output = 0;
-    else if (outputStr == "abcdefghijklmnopqrstuvwxyz!@#$%^&*?/<>") output = 0;
-    else if (outputStr == "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?/<>") output = 0;
-    else if (outputStr == "1234567890") output = 0;
-    else output = 1;
-    if (output == expected) return 0;
-    else return 1;
-}
-
-int utils::testRandomPass(uint32_t length, int expected) {
-    int output = 0;
-    std::string outputStr = randomPass(length, "abcdefghijklmnopqrstuvwxyz");
-    if (outputStr != "1") output = 0;
-    if (output == expected) return 0;
-    else return 1;
-}*/

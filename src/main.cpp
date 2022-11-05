@@ -1,5 +1,3 @@
-﻿// pwgen.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
 #include "utils.h"
 #include <string>
 #include <iostream>
