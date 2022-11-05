@@ -9,9 +9,6 @@ build/src/main.o: src/main.cpp src/utils.h
 build/src/utils.o: src/utils.cpp src/utils.h
 	g++ -Wall -Werror -c src/utils.cpp -o build/src/utils.o
 
-#test: build/test build/test/tests.cpp
-#	g++ -Wall -Werror build/test/*.o build/src/utils.o -o bin/test
-
 test: build/test trash build/src/utils.o
 	g++ -o bin/test build/test/tests.cpp
 
